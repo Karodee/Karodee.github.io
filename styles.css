@@ -53,12 +53,35 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 1000;
 }
 
 footer p {
     margin: 0;
     font-size: 14px;
+}
+
+.video-container {
+    text-align: center; /* Centers the video */
+}
+
+video {
+    display: inline-block; /* Ensures the video behaves like a block-level element */
+    margin: 0 auto;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around; /* Space images evenly */
+    align-items: center;
+    gap: 20px; /* Optional spacing between images */
+    flex-wrap: wrap; /* Ensure images wrap on smaller screens */
+}
+
+.image-gallery img {
+    max-width: 30%; /* Controls width of each image */
+    height: auto;   /* Maintains aspect ratio */
 }
