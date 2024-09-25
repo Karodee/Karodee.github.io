@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,8 +18,74 @@
         <a href="hobbies.html">Hobbies</a>
     </nav>
 
+    <section id="Master Research">
+        <h2>Simulation of micro-robotic swimmers</h2>
+        <p>
+            As part of my master's research at Carnegie Mellon University, I am working under Professor Rebecca Taylor to study the mechanics and movements of micro-robotic structures. 
+            <ul>
+                <li>Developing novel methods to solve Fluid-Structure Interactions of micro-scale flexible structures on LS-Dyna</li>
+                <li>Optimizing the drag factors of different micro-swimmers to improve efficiency and speed of locomotion</li>
+                <li>Modelled electromagnetic forces acting on the swimmer. An oscillating magnettic field drives movement of the swimmer</li>
+            </ul>
+        </p>
+        <div class = "video-container">
+            <video controls width="600">
+                <source src="videos/mesh_movement.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
 
-    <section id="skills">
+    <section id="IDL Project">
+        <h2>Reinforcement Learning for time-series forecasting</h2>
+        <p>
+            As part of '11-785 Intro to Deep Learning' in CMU, My team and I created RLFinNet, a reinforcement learning-based model tailored to forecast financial time-series data. 
+            <ul>
+                <li>Achieved an accuracy of2.1% better than state-of-the-art with a training time of only 110 seconds on an Nvidia Tesla T4</li>
+                <li>I rewrote the existing OneNet model to be more lightweight and streamline the input dimensions, weighing the adjusted close price as the most important. </li>
+            </ul>
+        </p>
+            
+        <div class="image-gallery">
+            <img src="images/MDT_20.png" alt="Random samples of ground truth vs prediction">
+            <img src="images/AGFS_20.png" alt="Random samples of ground truth vs prediction">
+            <img src="images/BA_20.png" alt="Random samples of ground truth vs prediction">
+        </div>
+            
+        <p>A drawback of this project is that none of us on the team have expertise in financial modelling. We chose this topic because the mathematics of forecasting data as unpredictable as financial data seemed very interesting.</p>
+        <p>
+            <a href="https://drive.google.com/file/d/1tIk4JyqCbIa65STHnLLXWUbqaOcZmHZj/view?usp=drive_link">Here</a> is a link to the project report
+            <a href="https://github.com/Naman-Choudhary-AI-ML/RLFinanceTimeSeries-OneNet">Here</a> is a link to the Github 
+        </p>
+    </section>
+
+    <section id="CFD Project">
+        <h2>Modelling inert gas flow in an Additive Manufacturing Chamber</h2>
+        <p>
+            As part of '24-718 Computational Fluid Dynamics' in CMU, My team and I wrote a Python script to solve Navier Stokes and model inert gas flow in an Additive Manufacturing chamber
+        </p>
+            <ul>
+                <li>I wrote the python script to solve the complete conservative Navier-Stokes Equation and sweep a combination of input and output locations</li>
+                <li>We were sensitive to three factors - Heat Transfer around the build plate, carrying spatter particles away from the build, and flushing the entire chamber with the inert gas </li>
+            </ul>
+
+
+        <div class="image-gallery">
+            <img src="images/VelocityVectors_1_0.png" alt="Simulation contour">
+            <img src="images/PressureContours_1_0.png" alt="Simulation contour">
+            <img src="images/TemperatureContours_1_0.png" alt="Simulation contour">
+        </div>
+        <p>
+            One big drawback of the formulation used in this project is the lack of eddy currents formed, which might be a result of the changes to the dynamic viscosity. We were forced to make the gas very viscous to allow us to complete all the required simulations in time to complete the course.
+        </p>
+        <p>
+            <a href="https://drive.google.com/file/d/1tIk4JyqCbIa65STHnLLXWUbqaOcZmHZj/view?usp=drive_link">Here</a> is a link to the project report
+            <a href="https://github.com/Karodee/CFD-analysis-of-AM-Chamber">Here</a> is a link to the Github
+
+        </p>    
+    </section>
+
+    <!-- <section id="skills"></section>
         <h2>Skills</h2>
         <ul>
             <li>Computational Mechanics Modeling</li>
@@ -30,15 +95,7 @@
             <li>Finite Element Analysis (FEA)</li>
             <li>Python, MATLAB, C++</li>
         </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Micro-Robotic Structures Simulation</strong> - Developed computational models to simulate microswimmer robots in viscous fluids for advanced medical applications.</li>
-            <li><strong>Additive Manufacturing Research</strong> - Conducted research on process parameters for optimal material properties in additive manufacturing, working with Archimedes density, grain boundary variance, and Vickers hardness.</li>
-        </ul>
-    </section>
+    </section> -->
 
     <section id="contact">
         <h2>Contact</h2>
