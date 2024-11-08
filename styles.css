@@ -57,6 +57,7 @@ footer {
     width: 100%;
     bottom: 0;
     z-index: 1000;
+    opacity: 0.75;
 }
 
 footer p {
