@@ -86,3 +86,14 @@ video {
     max-width: 30%; /* Controls width of each image */
     height: auto;   /* Maintains aspect ratio */
 }
+
+.divider {
+    width: 80%;
+    height: 2px;
+    background-color: #333;
+    margin: 30px auto; /* Center and space it */
+}
+
+html {
+    scroll-behavior: smooth;
+}
