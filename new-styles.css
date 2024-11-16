@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #b6f0c3, #b8d7f0); /* Light green to blue gradient */
@@ -7,40 +7,65 @@ body {
 
 
 header {
-    background-color: #2b0c80;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack the nav and h1 vertically */
+    align-items: center; /* Center the h1 horizontally */
+    justify-content: space-between; /* Spread content evenly */
+    padding: 10px;
+    /* background: linear-gradient(to right, #85d396, #85d396); */
     color: white;
-    padding: 20px 0;
-    text-align: center;
+    padding: 10px 20px;
+}
+
+header nav {
+    position: absolute; /* Keep nav in the corner */
+    left: 1370px; /* Distance from the left */
+    align-items: center; /* Center the header nav horizontally */
+    color: white !important;
+}
+
+section nav {
+    position: fixed; /* Keep nav in the corner */
+    right: 0;
+    align-items: center; /* Center the header nav horizontally */
+    color: white;
 }
 
 header h1 {
     margin: 0;
-    font-size: 36px;
+    font-size: 50px;
+    text-align: center; /* Vertically align items */
+    color: white;
 }
 
 nav {
-    margin: 20px 0;
-    text-align: center;
+    display: flex; /* Arrange links horizontally */
+    gap: 15px; /* Add space between links */
+    color: antiquewhite;
 }
-
 
 nav a {
     text-decoration: none;
-    color: #333;
-    margin: 0 15px;
-    font-size: 18px;
+    color: white !important;
+    font-size: 16px;
+    transition: color 0.3s; /* Smooth color change on hover */
 }
+
+nav a:hover {
+    color: #1cf02e; /* Highlight color on hover */
+}
+
 
 section {
     max-width: 1000px;
     margin: 30px auto;
     padding: 20px;
-    background-color: white;
+    background: linear-gradient(to right, #96f1e9, #a9f7e4); /* Light green to blue gradient */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    font-size: 28px;
+    font-size: 38px;
     margin-bottom: 15px;
 }
 
@@ -88,12 +113,13 @@ video {
     height: auto;   /* Maintains aspect ratio */
 }
 
-.divider {
+/* .divider {
     width: 80%;
     height: 2px;
     background-color: #333;
     margin: 30px auto; /* Center and space it */
-}
+/*} 
+*/
 
 html {
     scroll-behavior: smooth;
