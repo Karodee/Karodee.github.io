@@ -4,58 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Simulation of Micro-Robotic Swimmers - Karthik Subramaniam's Portfolio</title>
-    <link rel="stylesheet" href="Project-page-styles.css">
+    <title>Karthik Subramaniam</title>
+    <link rel="stylesheet" href="new-styles.css">
+    <link rel="stylesheet" href="portfolio-styles.css">
 </head>
 <body>
-
-    <!-- Header -->
     <header>
-        <h1>Clap controlled car</h1>
-        <p>Introduction to modern making</p>
+        <h1>Karthik Subramaniam</h1>
+        <nav>
+            <a href="#portfolio">Portfolio</a>
+            <a href="https://drive.google.com/file/d/1YeDMkWRsAxx6S-sf990ckV0FmUoySpqg/view?usp=drive_linkk" target="_blank">Resume</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/Karodee" target="_blank">Github</a>
+            <a href="hobbies.html">Hobbies</a>
+        </nav>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="../portfolio.html">Portfolio</a>
-        <a href="../index.html">Home</a>
-        <a href="https://drive.google.com/file/d/1YeDMkWRsAxx6S-sf990ckV0FmUoySpqg/view?usp=drive_link"target="_blank">Resume </a>
-        <a href="mailto:karthik4subramaniam@gmail.com">Contact</a>
-        <a href="https://github.com/Karodee">GitHub</a>
-    </nav>
 
-    <!-- Project Overview -->
-    <section class="project-overview">
-        <h2>Project Overview</h2>
-        <p>
-            This project produced a remotely controlled car that responds to claps to move forward, back, and stop, depending on the number of claps. The car responds to 2 claps to move forward, 3 claps to move backward, and 1 clap to halt.
-        </p>
-    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="images/Headshot.jpg" alt="Karthik Subramaniam" style="display: block; margin: 0 auto; max-width: 50%; height: auto;">
+            <p>
+                Hello! I'm a Graduate Student studying Mechanical Engineering at Carnegie Mellon University. I will graduate in May 2025 and am seeking full-time opportunities.
+            </p>
 
-    <!-- Animation Screenshots -->
-    <section class="gallery">
-        <h2>Visualizing Results</h2>
-        <div class="image-gallery">
-            <img src="../images/car.png" alt="Velocity Vectors Simulation" class="gallery-image">
-            <img src="../images/Clap-car.jpg" alt="Pressure Contours Simulation" class="gallery-image">
-            <img src="../images/components.png" alt="Temperature Contours Simulation" class="gallery-image">
+            <p>
+                I'm an Alumnus of BITS Pilani, Pilani Campus. I'm a passionate Engineer and Developer with experience in computational mechanics, additive manufacturing, artificial intelligence, 
+                and more. I'm extremely interested in Mechanical Design and analysis roles. I work best in collaborative multi-disciplinary settings and am always looking to continue learning.
+            </p>
         </div>
-        <p>These images display Individual screenshots of a computational experiment from LS-Dyna.</p>
     </section>
 
-  
+    <!-- Divider with gradient for smooth transition -->
+    <div class="divider"></div>
 
-    <!-- Contact Information -->
-    <section class="contact-info">
-        <h2>Contact Information</h2>
-        <p>For questions or collaboration opportunities, feel free to reach out:</p>
-        <p>Email: <a href="mailto:karthik4subramaniam@gmail.com">karthik4subramaniam@gmail.com</a></p>
+    <!-- Portfolio Section (optional based on your use case) -->
+
+    <section id="portfolio">
+        <div class="portfolio-header">
+            <h2>My Portfolio</h2>
+            <p>Explore my projects and creative works below.</p>
+        </div>
+        
+        <!-- Portfolio items go here -->
+
+        <!-- Simulation of micro-robotic swimmers -->
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <a href="projects/Masters-research.html">
+                    <img src="thumbnail/mesh_movement.jpg" alt="Simulation of micro-robotic swimmers">
+                    <div class="portfolio-overlay">
+                        <h2>Simulation of Micro-Robotic Swimmers</h2>
+                        <p>Research at CMU on Fluid-Structure Interactions for micro-swimmers under Prof. Rebecca Taylor.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Reinforcement Learning for time-series forecasting -->
+            <div class="portfolio-item">
+                <a href="projects/785.html">
+                    <img src="thumbnail/AGFS_20.png" alt="Time-series forecasting project">
+                    <div class="portfolio-overlay">
+                        <h2>Time-Series Forecasting with Reinforcement Learning</h2>
+                        <p>Developed RLFinNet for financial forecasting, achieving 2.1% better accuracy than the state-of-the-art.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- CFD Project -->
+            <div class="portfolio-item">
+                <a href="projects/CFD.html">
+                    <img src="thumbnail/VelocityVectors_1_0.png" alt="CFD modeling of inert gas flow">
+                    <div class="portfolio-overlay">
+                        <h2>CFD Modeling of Inert Gas Flow</h2>
+                        <p>Python script to solve Navier-Stokes for gas flow in an Additive Manufacturing chamber.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Undergraduate Thesis -->
+            <div class="portfolio-item">
+                <a href="projects/AMThesis.html">
+                    <img src="thumbnail/test_coupons.jpg" alt="Microwave annealing project">
+                    <div class="portfolio-overlay">
+                        <h2>Microwave Annealing of Stainless Steel</h2>
+                        <p>Investigated microwave annealing on AM Stainless Steel, achieving 40% energy savings.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Clap-Controlled Car -->
+            <div class="portfolio-item">
+                <a href="projects/clap-car.html">
+                    <img src="thumbnail/Clap-car.jpg" alt="Clap-controlled car project">
+                    <div class="portfolio-overlay">
+                        <h2>Clap-Controlled Car</h2>
+                        <p>Arduino-based car responds to claps for movement control.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- AM Design Project -->
+            <div class="portfolio-item">
+                <img src="thumbnail/AM-Design.png" alt="Foldable wallet -- 3D Printed">
+                <div class="portfolio-overlay">
+                    <h2>Foldable wallet</h2>
+                    <p>Mass-producable foldable wallet to be manufactured by FDM</p>
+                </div>
+            </div>
+
+            <!-- Designs and Fixtures -->
+            <div class="portfolio-item">
+                <img src="thumbnail/Shoulder.jpg" alt="Engineering designs and fixtures">
+                <div class="portfolio-overlay">
+                    <h2>Designs and Fixtures</h2>
+                    <p>Engineering designs including a nozzle for rockets and fixtures for microtesting.</p>
+                </div>
+            </div>
+
+        </div>
+
+
     </section>
 
-    <!-- Footer -->
+    <!-- Another Divider -->
+    <div class="divider"></div>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email me at: <a href="mailto:karthik4subramaniam@gmail.com">karthik4subramaniam@gmail.com</a></p>
+        <p>Here's my <a href="https://www.linkedin.com/in/karthiksubram/" target="_blank">LinkedIn</a>!</p>
+        <p>Personal Phone: +1 (412) 339-6843</p>
+    </section>
+
     <footer>
-        <p>© 2024 Karthik Subramaniam. Post code got a 56</p>
+        <p>© 2024 Karthik Subramaniam. Always happy to discuss Nancy Drew games :)</p>
     </footer>
 
+    <!-- JavaScript for scroll animation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const portfolioSection = document.querySelector('.portfolio-gallery');
+            
+            function checkVisibility() {
+                const rect = portfolioSection.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    portfolioSection.classList.add('visible');
+                    window.removeEventListener("scroll", checkVisibility);
+                }
+            }
+
+            window.addEventListener("scroll", checkVisibility);
+            checkVisibility();
+        });
+    </script>
 </body>
 </html>
