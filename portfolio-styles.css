@@ -121,3 +121,20 @@ nav a {
 .portfolio-overlay p {
     font-size: 1rem;
 }
+
+/* Portfolio Header Styling */
+.portfolio-header {
+    text-align: center; /* Center-align the heading and description */
+    margin-bottom: 40px; /* Add spacing below the header */
+}
+
+.portfolio-header h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333; /* Primary color for the heading */
+}
+
+.portfolio-header p {
+    font-size: 18px;
+    color: #555; /* Subtle color for the description */
+}

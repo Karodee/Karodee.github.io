@@ -32,21 +32,24 @@ nav a {
 }
 
 section {
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 30px auto;
     padding: 20px;
-    background-color: white;
+    background: linear-gradient(to right, #96f1e9, #a9f7e4); /* Light green to blue gradient */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 section h2 {
     font-size: 28px;
     margin-bottom: 15px;
+    text-align: left;
 }
 
 section p {
     font-size: 18px;
     line-height: 1.6;
+    text-align: left;
 }
 
 footer {
