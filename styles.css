@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #b6f0c3, #b8d7f0); /* Light green to blue gradient */
+    background: linear-gradient(to right, #e2ffe8, #fafdc8); /* Light green to yellow gradient */
 }
 
 
@@ -33,15 +33,17 @@ nav a {
 
 section {
     max-width: 1500px;
+    color: aliceblue;
+    /* shape-outside: border-box; */
     margin: 30px auto;
     padding: 20px;
-    background: linear-gradient(to right, #96f1e9, #a9f7e4); /* Light green to blue gradient */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #303030;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 
 section h2 {
-    font-size: 28px;
+    font-size: 34px;
     margin-bottom: 15px;
     text-align: left;
 }

@@ -1,27 +1,23 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
+header h1 {
     margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #b6f0c3, #b8d7f0); /* Light green to blue gradient */
-}
-
-
-header {
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Stack the nav and h1 vertically */
-    align-items: center; /* Center the h1 horizontally */
-    justify-content: space-between; /* Spread content evenly */
-    padding: 10px;
-    /* background: linear-gradient(to right, #85d396, #85d396); */
-    color: white;
-    padding: 10px 20px;
+    font-size: 40px;
+    text-align: center;
 }
 
 header nav {
-    position: absolute; /* Keep nav in the corner */
-    left: 1370px; /* Distance from the left */
-    align-items: center; /* Center the header nav horizontally */
-    color: white !important;
+    display: flex; /* Flexbox for navigation links */
+    gap: 15px; /* Add space between links */
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+header nav a:hover {
+    color: #1cf02e; /* Highlight color on hover */
 }
 
 section nav {
@@ -31,12 +27,7 @@ section nav {
     color: white;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 50px;
-    text-align: center; /* Vertically align items */
-    color: white;
-}
+
 
 nav {
     display: flex; /* Arrange links horizontally */
@@ -44,24 +35,15 @@ nav {
     color: antiquewhite;
 }
 
-nav a {
-    text-decoration: none;
-    color: white !important;
-    font-size: 16px;
-    transition: color 0.3s; /* Smooth color change on hover */
-}
-
-nav a:hover {
-    color: #1cf02e; /* Highlight color on hover */
-}
-
 
 section {
     max-width: 1500px;
+    color: aliceblue;
+    /* shape-outside: border-box; */
     margin: 30px auto;
     padding: 20px;
-    background: linear-gradient(to right, #96f1e9, #a9f7e4); /* Light green to blue gradient */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #303030;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 section h2 {
@@ -70,7 +52,7 @@ section h2 {
 }
 
 section p {
-    font-size: 18px;
+    font-size: 28px;
     line-height: 1.6;
 }
 
@@ -123,4 +105,9 @@ video {
 
 html {
     scroll-behavior: smooth;
+}
+
+a:hover {
+    color: #0077b5; /* LinkedIn blue */
+    text-decoration: underline;
 }

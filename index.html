@@ -13,7 +13,7 @@
         <h1>Karthik Subramaniam</h1>
         <nav>
             <a href="#portfolio">Portfolio</a>
-            <a href="https://drive.google.com/file/d/1YeDMkWRsAxx6S-sf990ckV0FmUoySpqg/view?usp=drive_linkk" target="_blank">Resume</a>
+            <a href="projects\PDF\Karthik_Subramaniam_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             <a href="#contact">Contact</a>
             <a href="https://github.com/Karodee" target="_blank">Github</a>
             <a href="hobbies.html">Hobbies</a>
@@ -23,18 +23,25 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <div class="about-content">
-            <img src="images/Headshot.jpg" alt="Karthik Subramaniam" style="display: block; margin: 0 auto; max-width: 50%; height: auto;">
-            <p>
-                Hello! I'm a Graduate Student studying Mechanical Engineering at Carnegie Mellon University. I will graduate in May 2025 and am seeking full-time opportunities.
-            </p>
-
-            <p>
-                I'm an Alumnus of BITS Pilani, Pilani Campus. I'm a passionate Engineer and Developer with experience in computational mechanics, additive manufacturing, artificial intelligence, 
-                and more. I'm extremely interested in Mechanical Design and analysis roles. I work best in collaborative multi-disciplinary settings and am always looking to continue learning.
-            </p>
+        <div class="about-content" style="display: flex; align-items: center; gap: 20px;">
+            <!-- Image Section -->
+            <div style="flex: 1; text-align: center;">
+                <img src="images/Headshot.jpg" alt="Karthik Subramaniam" style="max-width: 100%; height: auto; border-radius: 8px;">
+            </div>
+    
+            <!-- Text Section -->
+            <div style="flex: 2;">
+                <p>
+                    Hello! I'm a Graduate Student studying Mechanical Engineering at Carnegie Mellon University. I will graduate in May 2025 and am seeking full-time opportunities.
+                    I'm a passionate Engineer and Developer with experience in computational mechanics, additive manufacturing, and Artificial Intelligence. I'm an Alumnus of BITS Pilani, Pilani Campus.
+                </p>
+                <p>
+                    I'm extremely interested in Mechanical Design and analysis roles. I work best in collaborative multi-disciplinary settings and am always looking to continue learning.
+                </p>
+            </div>
         </div>
     </section>
+    
 
     <!-- Divider with gradient for smooth transition -->
     <div class="divider"></div>
@@ -132,11 +139,29 @@
     <div class="divider"></div>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email me at: <a href="mailto:karthik4subramaniam@gmail.com">karthik4subramaniam@gmail.com</a></p>
-        <p>Here's my <a href="https://www.linkedin.com/in/karthiksubram/" target="_blank">LinkedIn</a>!</p>
-        <p>Personal Phone: +1 (412) 339-6843</p>
+        <h2 style="margin-bottom: 20px;">Contact</h2>
+        <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+            <!-- Email -->
+            <p>
+                <a href="mailto:karthik4subramaniam@gmail.com" ><img src="icons/email.svg" alt="Email" style="width: 30px; height: 30px;"></a>
+                karthik4subramaniam@gmail.com
+            </p>
+    
+            <!-- LinkedIn -->
+            <p>
+                <a href="https://www.linkedin.com/in/karthiksubram/" target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
+                LinkedIn Profile
+            </p>
+    
+            <!-- Phone -->
+            <p>
+                <img src="icons/phone.svg" alt="Phone" style="width: 30px; height: 30px;">
+                +1 (412) 339-6843
+            </p>
+            <br><br><br><br><br><br>
+        </div>
     </section>
+    
 
     <footer>
         <p>© 2024 Karthik Subramaniam. Always happy to discuss Nancy Drew games :)</p>

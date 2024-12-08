@@ -5,16 +5,20 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #b6f0c3, #b8d7f0); /* Light green to blue gradient */
+    font-family: 'Merriweather', Georgia, serif;
+    /*background: linear-gradient(to right, #fdeecc, #fdeebb); /* Light green to yellow gradient */
+    background: #303030;
 }
 
+
 header {
-    text-align: center;
-    background-color: #333;
+    display: flex; /* Flexbox for header */
+    justify-content: space-between; /* Space between h1 and nav */
+    align-items: center; /* Vertically center items */
+    background-color: #000000;
     color: white;
-    padding: 1rem 0;
-    /* zoom: 400%; */
+    padding: 10px 20px;
+    text-align: center;
 }
 
 footer {
@@ -36,7 +40,7 @@ nav {
 }
 
 nav a {
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 1rem;
     font-weight: bold;
@@ -56,7 +60,8 @@ nav a {
 }
 
 .portfolio-header {
-    text-align: center; /* Center-align heading and description */
+    color: #ffffff;
+    text-align: left; /* Center-align heading and description */
     margin-bottom: 40px; /* Add space below the header */
 }
 
@@ -67,7 +72,7 @@ nav a {
 
 .portfolio-header p {
     font-size: 18px;
-    color: #555; /* Subtle color for the description */
+    color: #ffffff; /* Subtle color for the description */
 }
 
 .portfolio-item {
@@ -120,21 +125,4 @@ nav a {
 
 .portfolio-overlay p {
     font-size: 1rem;
-}
-
-/* Portfolio Header Styling */
-.portfolio-header {
-    text-align: center; /* Center-align the heading and description */
-    margin-bottom: 40px; /* Add spacing below the header */
-}
-
-.portfolio-header h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: #333; /* Primary color for the heading */
-}
-
-.portfolio-header p {
-    font-size: 18px;
-    color: #555; /* Subtle color for the description */
 }
