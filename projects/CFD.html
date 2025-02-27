@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CFD Modeling of Inert Gas Flow - Karthik Subramaniam's Portfolio</title>
+    <title>Design and Analysis of an Inert Gas Flow Chamber - Karthik Subramaniam</title>
     <link rel="stylesheet" href="Project-page-styles.css">
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        <h1>CFD Modeling of Inert Gas Flow in an Additive Manufacturing Chamber</h1>
-        <p>Computational Fluid Dynamics Project at Carnegie Mellon University</p>
+        <h1>Design and Analysis of an Inert Gas Flow Chamber for Additive Manufacturing</h1>
+        <p>Conceptual Design and Computational Analysis Project at Carnegie Mellon University</p>
     </header>
 
     <!-- Navigation -->
     <nav>
         <a href="../portfolio.html">Portfolio</a>
         <a href="../index.html">Home</a>
-        <a href="PDF\Karthik_Subramaniam_resume.pdf" target="_blank" rel="noopener noreferrer">Resume </a>
+        <a href="PDF/Karthik_Subramaniam_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="mailto:karthik4subramaniam@gmail.com">Contact</a>
         <a href="https://github.com/Karodee">GitHub</a>
     </nav>
@@ -28,65 +28,82 @@
     <section class="project-overview">
         <h2>Project Overview</h2>
         <p>
-            In this project for the Computational Fluid Dynamics course (24-718) at CMU, my team and I developed a Python-based 
-            script to solve the Navier-Stokes equations and model the behavior of inert gas flow within an additive manufacturing 
-            chamber. Our work focuses on optimizing the gas flow to efficiently remove spatter particles and manage heat transfer, 
-            ensuring a stable environment for additive manufacturing processes.
+            In this project, My teammates and I developed a conceptual design for an inert gas flow chamber intended for additive manufacturing environments. 
+            The objective was to create an optimized chamber geometry that enhances spatter removal, maintains thermal stability, and ensures a controlled atmosphere. 
+            Using computational fluid dynamics (CFD), I refined the design by analyzing gas flow patterns and heat transfer effects.
         </p>
     </section>
 
-    <!-- Project Goals -->
+    <!-- Design Objectives -->
     <section class="project-goals">
-        <h2>Project Goals</h2>
+        <h2>Design Objectives</h2>
         <ul>
-            <li>Accurately simulate gas flow behavior to minimize turbulence and optimize chamber efficiency.</li>
-            <li>Ensure effective heat transfer around the build plate to prevent residual stresses during manufacturing.</li>
-            <li>Reduce spatter accumulation by optimizing the inert gas flow to carry particles away from the build area.</li>
+            <li>Develop a chamber design that optimizes inert gas flow for uniform distribution.</li>
+            <li>Minimize turbulence to prevent spatter accumulation and ensure process stability.</li>
+            <li>Maintain consistent heat distribution to reduce residual stresses in the printed part.</li>
         </ul>
     </section>
 
-    <!-- Image Gallery of Simulation Results -->
-    <section class="gallery">
-        <h2>Simulation Results</h2>
-        <div class="image-gallery">
-            <img src="../images/streamlines 1-4.png" alt="Flow streamlines" class="gallery-image">
-            <img src="../images/PressureContours_1_0.png" alt="Pressure Contours Simulation" class="gallery-image">
-            <img src="../images/TemperatureContours_1_0.png" alt="Temperature Contours Simulation" class="gallery-image">
+    <!-- Conceptual Design and Simulation Results -->
+    <section id="about">
+        <h2>Conceptual Design</h2>
+        <div class="about-content" style="display: flex; align-items: center; gap: 20px;">
+            <!-- Image Section -->
+            <div style="flex: 1; text-align: center;">
+                <img src="../images/cfdconceptual.png" alt="Conceptual Design" style="max-width: 100%; height: auto; border-radius: 8px;">
+            </div>
+    
+            <!-- Text Section -->
+            <div style="flex: 2; font-size: 22px;">
+                <p>
+                    In this project, My teammates and I developed a conceptual design for an inert gas flow chamber intended for additive manufacturing environments. 
+                    The objective was to create an optimized chamber geometry that enhances spatter removal, maintains thermal stability, and ensures a controlled atmosphere. 
+                    Using computational fluid dynamics (CFD), I refined the design by analyzing gas flow patterns and heat transfer effects.
+                </p>
+            </div>
         </div>
-        <p>These images display velocity vectors, pressure contours, and temperature distribution within the chamber.</p>
     </section>
 
     <section id="Methods">
-        <h2>Methods</h2>
+        <h2>Analysis Methods</h2>
         <p>
             We quantitatively classified gas flow configurations to identify the most effective setup. Any configuration where the average gas speed over a 0.1 m space above the build plate was below 2 m/s was considered inadequate for clearing spatter. Our analysis revealed that placing the inlet near the bottom (0.0 - 0.1 m) and the outlet near the top (0.3 - 0.4 m) provided the best results. This setup achieved an average gas speed of 2.5 m/s, ensuring spatter removal while minimizing temperature loss. With only a 5% reduction in the thermal profile and 90% of the build plate maintaining optimal temperature, this configuration offered the best balance of flow and heat retention.
 
         </p>
     </section>
+    <section class="gallery">
+        <h2>Visualizing results</h2>
+        <p>
+            The chamber design was iteratively refined through simulation-driven analysis. Key modifications were made to the inlet and 
+            outlet positioning to enhance airflow efficiency. Below are results from CFD simulations evaluating the effectiveness of the design.
+        </p>
+        <div class="image-gallery">
+            <img src="../images/streamlines 1-4.png" alt="Flow streamlines" class="gallery-image">
+            <img src="../images/PressureContours_1_0.png" alt="Pressure Contours" class="gallery-image">
+            <img src="../images/TemperatureContours_1_0.png" alt="Temperature Contours" class="gallery-image">
+        </div>
+    </section>
 
     <!-- Results and Findings -->
     <section class="results">
-        <h2>Results and Findings</h2>
+        <h2>Results and Insights</h2>
         <p>
-            Our simulations revealed key insights into the flow dynamics within the chamber. We observed that altering gas 
-            viscosity and flow direction could significantly impact spatter removal and temperature stability:
+            The analysis provided key insights that informed the chamber design:
         </p>
         <ul>
-            <li>Flow optimization: Altered gas viscosity and flow direction reduced spatter accumulation by approximately 30%.</li>
-            <li>Heat management: Adjustments in flow rate and nozzle placement improved temperature consistency across the build plate.</li>
-            <li>Chamber efficiency: Modified inert gas flow reduced eddy formations, promoting smoother gas distribution.</li>
+            <li><strong>Improved Spatter Control:</strong> The optimized flow reduced particle accumulation by 30%.</li>
+            <li><strong>Thermal Stability:</strong> Modifying the flow rate and nozzle positioning led to more consistent heat retention.</li>
+            <li><strong>Enhanced Gas Flow Efficiency:</strong> Reducing eddy formations resulted in smoother gas distribution.</li>
         </ul>
     </section>
-
-
 
     <!-- References and Resources -->
     <section class="references">
         <h2>References and Resources</h2>
-        <p>For more information on this project:</p>
-        <a href="PDF\CFD_Final_report_group_4.pdf" target="_blank" rel="noopener noreferrer">Project Report</a>
-         || 
-        <a href="https://github.com/Karodee/CFD-analysis-of-AM-Chamber target="_blank">GitHub Repository</a>
+        <p>For more details on the design and analysis:</p>
+        <a href="PDF/CFD_Final_report_group_4.pdf" target="_blank" rel="noopener noreferrer">Project Report</a>
+        ||
+        <a href="https://github.com/Karodee/CFD-analysis-of-AM-Chamber" target="_blank">GitHub Repository</a>
     </section>
 
     <!-- Contact Information -->
@@ -98,7 +115,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 Karthik Subramaniam. Ferns Mohara Mukthaya</p>
+        <p>© 2024 Karthik Subramaniam</p>
     </footer>
 
 </body>
